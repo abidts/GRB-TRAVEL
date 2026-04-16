@@ -12,6 +12,7 @@ import HotelsPage from './pages/HotelsPage';
 import About from './components/About';
 import CabsPage from './pages/CabsPage';
 import ContactPage from './pages/ContactPage';
+import ErrorPage from './components/ErrorPage';
 
 // Use basename to match Vite's base path configuration
 const basename = '/';
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
         <App />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/destinations',
@@ -32,6 +34,7 @@ const router = createBrowserRouter([
         <DestinationsPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/destinations/:slug',
@@ -40,6 +43,7 @@ const router = createBrowserRouter([
         <DestinationDetail />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/packages',
@@ -48,6 +52,7 @@ const router = createBrowserRouter([
         <PackagesPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/packages/:packageName',
@@ -56,6 +61,7 @@ const router = createBrowserRouter([
         <PackageDetail />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/adventure',
@@ -64,6 +70,7 @@ const router = createBrowserRouter([
         <AdventurePage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/gallery',
@@ -72,6 +79,7 @@ const router = createBrowserRouter([
         <GalleryPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/reviews',
@@ -80,6 +88,7 @@ const router = createBrowserRouter([
         <ReviewsPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/hotels',
@@ -88,6 +97,7 @@ const router = createBrowserRouter([
         <HotelsPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/about',
@@ -96,6 +106,7 @@ const router = createBrowserRouter([
         <About />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/cabs',
@@ -104,6 +115,7 @@ const router = createBrowserRouter([
         <CabsPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/contact',
@@ -112,6 +124,7 @@ const router = createBrowserRouter([
         <ContactPage />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
   },
 ], {
   basename,
