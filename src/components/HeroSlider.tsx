@@ -305,9 +305,8 @@ export default function HeroSlider() {
             className={`h-full w-full object-cover ${i === current ? 'img-zoom-in' : ''}`}
           />
           {/* Overlays */}
-          <div className="absolute inset-0 bg-black/30 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/30 to-slate-950 z-11" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-transparent to-slate-950/40 z-11" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-transparent to-slate-950/30 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/20 via-transparent to-transparent z-10" />
         </div>
       ))}
 
