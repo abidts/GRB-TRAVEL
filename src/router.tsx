@@ -14,7 +14,7 @@ import CabsPage from './pages/CabsPage';
 import ContactPage from './pages/ContactPage';
 
 // Use basename to match Vite's base path configuration
-const basename = import.meta.env.PROD ? '/GRB-TRAVEL/' : '/';
+const basename = '/';
 
 const router = createBrowserRouter([
   {
